@@ -1,0 +1,56 @@
+{
+  "name": "radix10toradix64",
+  "version": "0.2.0",
+  "repository": "git@github.com:leomeloxp/radix10toradix64.git",
+  "description": "Converts radix-10 numbers to their radix-64 numerical equivalent and back",
+  "author": "Leonardo Melo <hello@leomeloxp.net>",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "radix-64",
+    "radix-10"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.7.0",
+    "husky": "^4.3.0",
+    "size-limit": "^4.7.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.0.3",
+    "typescript": "^4.0.5"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "module": "dist/radix10toradix64.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/radix10toradix64.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/radix10toradix64.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}
