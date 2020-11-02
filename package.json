@@ -1,6 +1,6 @@
 {
   "name": "radix10toradix64",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "repository": "git@github.com:leomeloxp/radix10toradix64.git",
   "description": "Converts radix-10 numbers to their radix-64 numerical equivalent and back",
   "author": "Leonardo Melo <hello@leomeloxp.net>",
@@ -13,7 +13,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test",
+    "test": "tsdx test --no-cache",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
